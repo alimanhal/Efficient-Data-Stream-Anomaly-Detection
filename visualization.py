@@ -14,7 +14,7 @@ def real_time_plot(data_points, anomalies):
     
     # Add labels and legends
     plt.xlabel('Time')
-    plt.ylabel('Value')
+    plt.ylabel('Stock Price')
     plt.legend()
     
     # Redraw the plot

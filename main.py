@@ -9,6 +9,7 @@ def main():
     data_stream = generate_data_stream()  # Using the real-time stock price stream
     data_points = []
     all_anomalies = []
+    batch_size = 50  # Group updates
 
     # Set window size and threshold for anomaly detection
     window_size = 50
@@ -22,7 +23,7 @@ def main():
         all_anomalies.extend(anomalies)
 
         # Update plot every 10 data points
-        if len(data_points) % 10 == 0:
+        if len(data_points) % batch_size == 0:
             real_time_plot(data_points, all_anomalies)
 
 if __name__ == "__main__":

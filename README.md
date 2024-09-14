@@ -21,7 +21,7 @@ The objective of this project is to detect unusual patterns in a continuous data
 
 The project is divided into four main components:
 
-1. **Data Stream**: Uses Yahoo Finance API to fetch real-time stock data.
+1. **Data Stream**: Uses Alpha Vantage API to fetch real-time stock data.
 2. **Anomaly Detection**: Applies Z-score-based logic to flag anomalies.
 3. **Visualization**: Generates real-time visualizations with anomalies marked.
 4. **Error Handling**: Includes error handling for API limits and other issues.

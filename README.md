@@ -33,9 +33,11 @@ The project is divided into four main components:
 ### Example Output
 
 Terminal showing detected anomalies:
+![image](https://github.com/user-attachments/assets/d0bd7f69-1dd4-4bf4-a317-ac467cc9a284)
 ```plaintext
 Anomaly detected: 223.94000244140625 (Z-score: 3.185542874274288)
 Anomaly detected: 223.1385040283203 (Z-score: -4.367154440057992)
 Anomaly detected: 222.87860107421875 (Z-score: -3.431356428497915)
-![image](https://github.com/user-attachments/assets/d0bd7f69-1dd4-4bf4-a317-ac467cc9a284)
+
+
 

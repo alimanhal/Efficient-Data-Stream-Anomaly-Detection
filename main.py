@@ -3,7 +3,10 @@ from anomaly_detection import z_score_anomaly_detection
 from visualization import real_time_plot
 
 def main():
-    data_stream = generate_data_stream()
+    """
+    Main function to run the anomaly detection process using real-time stock prices.
+    """
+    data_stream = generate_data_stream()  # Using the real-time stock price stream
     data_points = []
     all_anomalies = []
 
@@ -11,6 +14,7 @@ def main():
     window_size = 50
     threshold = 3
 
+    # Call the anomaly detection function with real-time stock data
     detection = z_score_anomaly_detection(data_stream, window_size, threshold)
 
     for data_point, anomalies in detection:
